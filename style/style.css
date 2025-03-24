@@ -279,7 +279,7 @@ ol ul li {
 }
 
 .list-of-strips {
-    min-height: 90vh;
+    min-height: calc(100vh - 121px);
     height: auto;
 }
 
