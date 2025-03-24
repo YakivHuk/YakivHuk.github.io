@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>task_box_model</title>
+        <style>
+            .box-1 {
+                width: 100px;
+                height: 100px;
+                font-size: 35px;
+                text-align: center;
+                background-color: white;
+                border-radius: 50%;
+                border: 50px solid yellow;
+                outline: 50px solid blue;
+                margin: 60px;
+            }
+
+            .box-2-1 {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                font-size: 35px;
+                text-align: center;
+                background-color: white;
+                border-radius: 50%;
+                box-shadow: 0 0 0 50px yellow,
+                            0 0 0 100px blue;
+                margin: 110px;
+            }
+
+            .box-2-2 {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                font-size: 35px;
+                text-align: center;
+                background-color: white;
+                border-radius: 50%;
+                border: 50px solid yellow;
+                box-shadow: 0 0 0 50px blue;
+                margin: 60px;
+            }
+
+            .box-3 {
+                width: 100px;
+                height: 100px;
+                font-size: 35px;
+                text-align: center;
+                background-color: white;
+                margin: 110px;
+            }
+
+            .box-3:before {
+                display: inline-block;
+                content: ' ';
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                transform: translate(-100px, -50px);
+                background: transparent;
+                border-radius: 50%;
+                border: 50px solid yellow;
+            }
+
+            .box-3:after {
+                display: inline-block;
+                content: ' ';
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                transform: translate(-150px, -208px);
+                background: transparent;
+                border-radius: 50%;
+                border: 50px solid blue;
+            }
+
+            .box-2 p,
+            .box-3 p {
+                padding-top: 32.5px;
+            }
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <h2>Перший спосіб (використання border та outline):</h2>
+        <div class="box-1"><p>UA</p></div>
+        <h2>Другий спосіб (використання тіней для 1-го блоку та - border + тінь для 2-блоку):</h2>
+        <div class="box-2-1"><p>UA</p></div>
+        <div class="box-2-2"><p>UA</p></div>
+        <h2>Третій спосіб (використання псевдоелементів before та after):</h2>
+        <div class="box-3"><p>UA</p></div>
+    </body>
+</html>
