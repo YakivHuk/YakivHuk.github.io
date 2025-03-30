@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Приклад №4</title>
+        <style>
+            div {
+                font-family: Oswald;
+                color: #333;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .wrapper:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .section {
+                height: 200px;
+                margin-bottom: 10px;
+                float: left;
+                width: 33.333333%;
+            }
+
+            .b2 {
+                background-color: #ddd;
+            }
+
+            .b1, .b3 {
+                background-color: #ccc;
+            }
+
+            .b4 {
+                background-color: #c8d5f0;
+                width: 240px;
+                padding: 40px 0;
+                margin-top: 50px;
+                clear: both;
+            }
+            #header,
+            #footer {
+                clear: both;
+                width: 100%;
+                height: 100px;
+                background-color: #eee;
+                margin: 10px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="header">Header</div>
+            <div class="wrapper">
+                <div class="section b1">Float 1</div>
+                <div class="section b2">Float 2</div>
+                <div class="section b3">Float 3</div>
+            </div>
+            <div class="b4">No Float</div>
+            <div id="footer">Footer</div>
+        </div>
+    </body>
+</html>
