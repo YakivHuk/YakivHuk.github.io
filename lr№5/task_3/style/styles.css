@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+table {
+    width: 250px;
+    text-align: center;
+    margin: 10px 10px;
+    border-collapse: collapse;
+    float: left;
+}
+
+th {
+    height: 50px;
+    font-size: 24px;
+}
+
+.green_table {
+    border: 2px solid rgb(22, 113, 23);
+    box-shadow: 0 10px 0 rgb(22, 113, 23);
+}
+
+.green_table th {
+    background-color: green;
+    color: white;
+    box-shadow: 0 10px 0 rgb(22, 113, 23);
+}
+
+.orange_table {
+    border: 2px solid rgb(180, 125, 22);
+    box-shadow: 0 10px 0 rgb(180, 125, 22);
+}
+
+.orange_table th {
+    background-color: orange;
+    color: white;
+    box-shadow: 0 10px 0 rgb(180, 125, 22);
+}
+
+.red_table {
+    border: 2px solid darkred;
+    box-shadow: 0 10px 0 darkred;
+}
+
+.red_table th {
+    background-color: red;
+    color: white;
+    box-shadow: 0 10px 0 darkred;
+}
+
+tr td {
+    height: 30px;
+}
+
+tr:first-child td {
+    height: 50px;
+    padding-top: 20px;
+}
+
+
+tr:last-child th {
+    font-weight: 100;
+}
+
+tr:last-child td {
+    width: 30px;
+}
+
+.container {
+    border-top: 3px dotted black;
+    width: 230px;
+    margin: 10px auto;
+}
+
+.green_btn {
+    width: 100px;
+    height: 45px;
+    background-color: green;
+    line-height: 45px;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+
+.orange_btn {
+    width: 100px;
+    height: 45px;
+    background-color: orange;
+    line-height: 45px;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+
+.red_btn {
+    width: 100px;
+    height: 45px;
+    background-color: red;
+    line-height: 45px;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+
+div [class*="btn"] a {
+    color: white;
+    text-decoration: none;
+}
