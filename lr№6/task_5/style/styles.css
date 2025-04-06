@@ -1,0 +1,132 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(47, 30, 20);
+}
+
+.menu {
+	background: white;
+	width: 90%;
+	height: 60vh;
+	position: relative;
+	top: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+img {
+    display: block;
+	width: 400px;
+	height: 100%;
+}
+
+.ad {
+	position: absolute;
+	top: 40%;
+    left: -15px;
+	background: black;
+    color: white;
+	width: 410px;
+    height: 230px;
+    text-align: center;
+	text-transform: uppercase;
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 40px;
+    padding-top: 25px;
+}
+
+
+.small_font {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.yellow {
+    color: rgb(255, 196, 0);
+} 
+
+.main {
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 400px;
+    width: calc(100% - 400px);
+    text-align: center;
+    padding: 50px;
+}
+
+.main > p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.main > div {
+    width: calc(50% - 40px);
+    padding: 25px 0;
+    border-bottom: 1px solid silver;
+}
+
+.main > div:nth-child(even) {
+    float: left;
+}
+
+.main > div:nth-child(odd) {
+    float: right;
+}
+
+.price {
+    color: gray;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.main > div:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: silver;
+    transform: rotate(45deg);
+    position: absolute;
+    margin-top: 20px;
+}
+
+div:nth-child(even):after {
+    left: 25%;
+}
+
+div:nth-child(odd):after {
+    right: 25%;
+}
+
+.btn {
+    position: absolute;
+    right: 5%;
+    top: calc(60vh + 120px);
+    background-color: black;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+.btn:hover {
+    background-color: rgb(31, 31, 31);
+    transition: all 0.5s ease;
+}
+
+.btn:active {
+    background-color: gray;
+    transition: all 0s ease;
+}
