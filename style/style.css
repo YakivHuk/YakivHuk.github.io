@@ -12,10 +12,11 @@ body {
 
 .navigation {
     height: 60px;
+    background-color:rgb(44, 57, 48)
 }
 
 .menu {
-    background-color:rgb(44, 57, 48);
+    background-color:rgba(44, 57, 48, .95);
     text-align: center;
     height: 60px;
     position: fixed;
@@ -56,7 +57,7 @@ body {
 .menu_btn:hover {
     color: rgb(220, 215, 201);
     text-decoration:none;
-    background-color: rgb(63, 79, 68);
+    background-color: rgba(63, 79, 68, .95);
 }
 
 .menu_btn:active {
@@ -278,7 +279,22 @@ ol ul li {
     height: 40px;
     padding: 5px;
     margin-right: 10px;
+    background-image: url(../icons/css_sprites.png);
+    background-size: 300%;
 }
+
+.icon_fb {
+    background-position: 4px center;
+}
+
+.icon_inst {
+    background-position: -30px center;
+}
+
+.icon_tw {
+    background-position: -71px center;
+}
+
 
 .icon:link {
     text-decoration:none;
@@ -326,7 +342,7 @@ ol ul li {
     bottom: 100px;
     width: 60px;
     height: 60px;
-    border: 5px solid rgb(44, 57, 48);
+    border: 5px solid rgba(44, 57, 48, .8);
     border-radius: 50%;
 }
 
@@ -353,9 +369,14 @@ ol ul li {
 }
 
 .swipe_top:link {
-    background-color: rgb(44, 57, 48);
+    background-color: rgba(44, 57, 48, .8);
 }
 
 .swipe_top:hover {
-    background-color: rgb(63, 79, 68);
+    background-color: rgb(63, 79, 68, .8);
+
+}
+
+.swipe_top:active {
+    background-color: rgba(162, 123, 92, .8);
 }
