@@ -37,6 +37,11 @@ body {
     text-decoration: none;
 }
 
+.menu > a:active {
+    color: #80BEE9;
+    text-decoration: none;
+}
+
 .menu_btn {
     box-sizing: content-box;
     padding: 10px;
@@ -44,6 +49,11 @@ body {
 }
 
 .menu_btn:link {
+    color: #B6B6B6;
+    text-decoration: none;
+}
+
+.menu_btn:active {
     color: #B6B6B6;
     text-decoration: none;
 }
@@ -78,6 +88,12 @@ h3 {
 }
 
 .btn:link {
+    color: white;
+    background-color: #FA5BA5;
+    text-decoration: none;
+}
+
+.btn:active {
     color: white;
     background-color: #FA5BA5;
     text-decoration: none;
@@ -188,6 +204,10 @@ footer {
 }
 
 .footer_menu .menu_btn:link {
+    color: #B3C1D4;
+}
+
+.footer_menu .menu_btn:active {
     color: #B3C1D4;
 }
 
