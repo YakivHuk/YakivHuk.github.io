@@ -37,7 +37,7 @@ body {
     text-decoration: none;
 }
 
-.menu > a:active {
+.menu > a:visited {
     color: #80BEE9;
     text-decoration: none;
 }
@@ -53,7 +53,7 @@ body {
     text-decoration: none;
 }
 
-.menu_btn:active {
+.menu_btn:visited {
     color: #B6B6B6;
     text-decoration: none;
 }
@@ -93,7 +93,7 @@ h3 {
     text-decoration: none;
 }
 
-.btn:active {
+.btn:visited {
     color: white;
     background-color: #FA5BA5;
     text-decoration: none;
@@ -207,7 +207,7 @@ footer {
     color: #B3C1D4;
 }
 
-.footer_menu .menu_btn:active {
+.footer_menu .menu_btn:visited {
     color: #B3C1D4;
 }
 
