@@ -147,6 +147,7 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    row-gap: 30px;
     width: 965px;
     margin: 0 auto;
 }
@@ -157,7 +158,6 @@ img {
 }
 
 .gallery figure {
-    height: 300px;
     width: 300px;
     overflow: hidden;
 }
