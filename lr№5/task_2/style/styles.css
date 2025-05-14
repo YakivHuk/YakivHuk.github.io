@@ -32,11 +32,15 @@ td:nth-child(even) {
     background-color: rgb(168, 239, 120);
 }
 
+.container {
+    text-align: center;
+}
+
 .table {
-    width: 500px;
+    display: inline-block;
     height: 145px;
-    margin: 10px auto;
     height: 145px;
+    text-align: left;
 }
 
 .hrow {
