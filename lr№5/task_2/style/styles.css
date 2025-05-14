@@ -39,7 +39,7 @@ td:nth-child(even) {
 .table {
     display: inline-block;
     min-width: 500px;
-    height: 145px;
+    max-height: 145px;
     text-align: left;
 }
 
