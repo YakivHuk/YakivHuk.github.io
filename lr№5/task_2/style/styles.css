@@ -36,6 +36,7 @@ td:nth-child(even) {
     width: 500px;
     height: 145px;
     margin: 10px auto;
+    height: 145px;
 }
 
 .hrow {
