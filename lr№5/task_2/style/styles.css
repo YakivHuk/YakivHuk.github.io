@@ -38,9 +38,15 @@ td:nth-child(even) {
 
 .table {
     display: inline-block;
-    min-width: 500px;
+    width: 500px;
     height: 145px;
     text-align: left;
+}
+
+.table:after {
+    display: table;
+    content: "";
+    clear: both;
 }
 
 .hrow {
