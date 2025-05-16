@@ -75,5 +75,4 @@ td:nth-child(even) {
 
 .col:last-child div {
     border-right: 2px solid black;
-    width: 153.8px;
 }
