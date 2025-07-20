@@ -7,18 +7,17 @@
 body {
     background-color: rgb(220, 215, 201);
     color: rgb(162, 123, 92);
-    min-width: 1000px;
 }
 
 .navigation {
-    height: 60px;
+    height: 80px;
     background-color:rgb(44, 57, 48)
 }
 
 .menu {
     background-color:rgba(44, 57, 48, .95);
     text-align: center;
-    height: 60px;
+    height: 80px;
     position: fixed;
     width: 100%;
 }
@@ -33,12 +32,14 @@ body {
     position: absolute;
     top: 50%;
     margin-left: -75px;
-    margin-top: -17.5px;
+    top: 20px;
     font-size: 20px;
-    width: 150px;
-    height: 35px;
+    width: 180px;
+    height: 40px;
     border-radius: 50px;
-    padding: 5px;
+    line-height: 40px;
+    user-select: none;
+    padding: 0 10px;
 }
 
 .menu_btn:link {
@@ -64,6 +65,10 @@ body {
     color: rgb(162, 123, 92);
     text-decoration:none;
 } 
+
+.menu_btn > span {
+    margin-left: 10px;
+}
 
 .curtain {
     float: left;
@@ -172,6 +177,7 @@ address {
 .page {
     float: left;
     width: 75%;
+    padding-bottom: 20px;
 }
 
 .page hr {
@@ -190,10 +196,11 @@ ol ul li {
 
 .strip {
     background-color: rgb(235, 229, 218);
+    height: 40px;
     border-radius: 50px;
-    width: calc(100%-20px);
     margin: 15px 10px 0;
     padding-top: 10px;
+    overflow: hidden;
 }
 
 .stripli {
@@ -203,15 +210,15 @@ ol ul li {
 }
 
 .stripli:first-child {
-    width: 10%
+    width: calc(15%-20px);
 }
 
 .stripli:nth-child(2) {
-    width: 60%
+    width: 65%;
 }
 
 .stripli:last-child {
-    width: 20%
+    width: calc(20%-10px);
 }
 
 .btn {
@@ -379,4 +386,40 @@ ol ul li {
 
 .swipe_top:active {
     background-color: rgba(162, 123, 92, .8);
+}
+
+@media screen and (max-width: 940px) {
+    .menu_btn {
+        width: 80px;
+        margin-left: calc(-100px/3);
+    }
+    .menu_btn > span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .stripli:nth-child(2) {
+        width: auto;
+    }
+
+    .stripli:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .curtain {
+        display: none;
+    }
+
+    .page {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .stripli:nth-child(2) {
+        font-size: 14px;
+    }
 }
