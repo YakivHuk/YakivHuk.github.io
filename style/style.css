@@ -240,7 +240,7 @@ summary:before {
 
 summary:after {
     transform: rotate(-45deg);
-    top: calc(21px + 1.25px * sqrt(2));
+    top: calc(20.5px + 1.25px * sqrt(2));
 }
 
 details[open] > summary:before,
