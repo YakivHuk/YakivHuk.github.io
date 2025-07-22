@@ -490,9 +490,7 @@ details[open] > summary:after {
     .page {
         width: 100%;
     }
-}
 
-@media screen and (max-width: 520px) {
     .stripli:nth-child(2) {
         font-size: 14px;
     }
