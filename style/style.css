@@ -39,6 +39,7 @@ body {
 
 .menu_btn {
     display: inline-block;
+    position: relative;
     font-size: 20px;
     width: 180px;
     height: 40px;
@@ -67,10 +68,32 @@ body {
     background-color: rgba(63, 79, 68, .95);
 }
 
+.menu_btn:hover:after {
+    width: 60%;
+    transition: all .5s ease;
+    left: 20%;
+}
+
+.menu_btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 50%;
+    top: 32.5px;
+    border-radius: 1.5px;
+    background-color: rgb(220, 215, 201);
+    transition: all .5s ease;
+}
 .menu_btn:active {
     color: rgb(162, 123, 92);
     text-decoration:none;
 } 
+
+.menu_btn:active:after {
+    background-color: rgb(162, 123, 92);
+}
 
 .menu_btn > span {
     margin-left: 10px;
@@ -449,7 +472,7 @@ details[open] > summary:after {
     background-color: rgba(162, 123, 92);
 }
 
-@keyframes open{
+@keyframes open {
     0% {
         background-color: transparent;
         margin-top: -15px;
