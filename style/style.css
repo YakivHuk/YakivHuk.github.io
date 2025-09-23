@@ -290,6 +290,14 @@ details[open] > summary:after {
     transition: width .5s ease;
 }
 
+.subdetails summary {
+    font-weight: normal;
+}
+
+.subdetails .stripli:first-child {
+    width: 70px;
+}
+
 .strip {
     background-color: rgb(235, 229, 218);
     height: 40px;
@@ -517,7 +525,7 @@ details[open] > summary:after {
     }
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1000px) {
     .limenu {
         width: 80px;
     }
@@ -527,15 +535,15 @@ details[open] > summary:after {
     .menu_btn > span {
         display: none;
     }
+
+    .stripli:last-child {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .stripli:nth-child(2) {
         width: auto;
-    }
-
-    .stripli:last-child {
-        display: none;
     }
 }
 
