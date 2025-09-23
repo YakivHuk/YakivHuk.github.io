@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання №2</title>
+</head>
+<body>
+    
+    <script type="module">
+        while (true) {
+            const p1 = document.createElement('p');
+            const p2 = document.createElement('p');
+            let lastName = prompt('Введіть своє прізвище')
+            if (lastName == null) break;
+            p1.textContent = `Прізвище: ${lastName}`;
+            document.body.appendChild(p1);
+            let name = prompt('Введіть своє ім\'я')
+            if (name == null) break;
+            p2.textContent = `Ім\'я: ${name}`;
+            document.body.appendChild(p2);
+        }
+    </script>
+</body>
+</html>
