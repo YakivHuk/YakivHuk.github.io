@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.output {
+    width: 90%;
+    height: 40px;
+    background-color: rgba(240, 255, 255, 0.645);
+    font-size: 32px;
+    font-family: sans-serif;
+    line-height: 40px;
+    color: rgb(51, 50, 50);
+    border-radius: 10px;
+    padding: 0 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 5px #0002;
+}
+
+.text-container {
+    position: relative;
+}
+
+.text-container:after {
+    display: inline-block;
+    content: "|";
+    position: relative;
+    top: -3px;
+    right: 4px;
+    font-size: 40px;
+}
+
+.ready .text-container:after {
+    animation: animationOfCursor 1s infinite;
+}
+
+@keyframes animationOfCursor {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
