@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота №5</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link href="assets/styles/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>ToDo List</h1>
+        <input type="text" placeholder="Додайте завдання" id="additionField" autocomplete="off" maxlength="60">
+        <button id="filterButton" class="filter-button">
+            <i class="fa-solid fa-filter"></i>
+            <span id="filterCondition" class="filter-condition">Сортувати за призначеними</span>
+        </button>
+        <output id="taskList"></output>
+        <p class="link">
+            Created by <a href="https://github.com/YakivHuk">@YakivHuk</a>
+        </p>
+    </div>
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
