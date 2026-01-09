@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Годинник</title>
+    <link rel="stylesheet" href="assets/styles/style.css" type="text/css">
+</head>
+<body>
+    <div class="clock">
+        <div style="--i:1" class="number"><span>1</span></div>
+        <div style="--i:2" class="number"><span>2</span></div>
+        <div style="--i:3" class="number"><span>3</span></div>
+        <div style="--i:4" class="number"><span>4</span></div>
+        <div style="--i:5" class="number"><span>5</span></div>
+        <div style="--i:6" class="number"><span>6</span></div>
+        <div style="--i:7" class="number"><span>7</span></div>
+        <div style="--i:8" class="number"><span>8</span></div>
+        <div style="--i:9" class="number"><span>9</span></div>
+        <div style="--i:10" class="number"><span>10</span></div>
+        <div style="--i:11" class="number"><span>11</span></div>
+        <div style="--i:12" class="number"><span>12</span></div>
+        <div class="second-arrow" id="secondArrow"></div>
+        <div class="minute-arrow" id="minuteArrow"></div>
+        <div class="hour-arrow" id="hourArrow"></div>
+
+        <div style="--j:1" class="strip-container"><div class="strip"></div></div>
+        <div style="--j:2" class="strip-container"><div class="strip"></div></div>
+        <div style="--j:3" class="strip-container"><div class="strip"></div></div>
+        <div style="--j:4" class="strip-container"><div class="strip"></div></div>
+        <div style="--j:5" class="strip-container"><div class="multiple-strip"></div></div>
+        <div style="--j:6" class="strip-container"><div class="strip"></div></div>
+        <div style="--j:7" class="strip-container"><div class="strip"></div></div>
+        <div style="--j:8" class="strip-container"><div class="strip"></div></div>
+        <div style="--j:9" class="strip-container"><div class="strip"></div></div>
+        <div style="--j:10" class="strip-container"><div  class="multiple-strip"></div></div>
+        <div style="--j:11" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:12" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:13" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:14" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:15" class="strip-container"><div  class="multiple-strip"></div></div>
+        <div style="--j:16" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:17" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:18" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:19" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:20" class="strip-container"><div  class="multiple-strip"></div></div>
+        <div style="--j:21" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:22" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:23" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:24" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:25" class="strip-container"><div  class="multiple-strip"></div></div>
+        <div style="--j:26" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:27" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:28" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:29" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:30" class="strip-container"><div  class="multiple-strip"></div></div>
+        <div style="--j:31" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:32" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:33" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:34" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:35" class="strip-container"><div  class="multiple-strip"></div></div>
+        <div style="--j:36" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:37" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:38" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:39" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:40" class="strip-container"><div  class="multiple-strip"></div></div>
+        <div style="--j:41" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:42" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:43" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:44" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:45" class="strip-container"><div  class="multiple-strip"></div></div>
+        <div style="--j:46" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:47" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:48" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:49" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:50" class="strip-container"><div  class="multiple-strip"></div></div>
+        <div style="--j:51" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:52" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:53" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:54" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:55" class="strip-container"><div  class="multiple-strip"></div></div>
+        <div style="--j:56" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:57" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:58" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:59" class="strip-container"><div  class="strip"></div></div>
+        <div style="--j:60" class="strip-container"><div  class="multiple-strip"></div></div>
+    </div>
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
